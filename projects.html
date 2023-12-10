@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <meta charset="UTF-8">
@@ -16,42 +15,35 @@
             padding-top: 20px;
             margin-bottom: 20px;
         }
-
-        /* Navbar Styles */
         nav.navbar {
             background-color: #3498db;
             border-bottom: 1px solid #2980b9;
-            border-radius: 10px; /* Rounded borders */
-            margin-bottom: 20px; /* Adjusted margin */
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-
         nav.navbar a,
         nav.navbar button {
             color: #ffffff !important;
             transition: color 0.3s ease;
             font-size: 1.2rem;
         }
-
         nav.navbar a:hover,
         nav.navbar button:hover {
             color: #ecf0f1 !important;
             text-decoration: underline;
         }
-
         .navbar-brand {
             color: #ffffff !important;
             font-size: 1.8rem;
             font-weight: bold;
             text-shadow: 2px 2px 4px #2980b9;
         }
-
         .navbar-brand img {
             width: 40px;
             height: 40px;
             margin-right: 10px;
             border-radius: 50%;
         }
-
         .navbar-toggler {
             background-color: #ecf0f1 !important;
         }
@@ -59,22 +51,18 @@
         .navbar-toggler-icon {
             background-color: #2c3e50 !important;
         }
-
         .navbar-toggler:hover {
             background-color: #2980b9 !important;
         }
-
         nav.navbar a,
         nav.navbar button,
         .navbar-toggler {
             border-radius: 5px;
         }
-
         .search-bar {
             margin-left: auto;
             margin-right: 10px;
         }
-
         .search-bar input {
             padding: 10px;
             border-radius: 5px;
@@ -82,7 +70,6 @@
             background-color: #3498db;
             color: #ecf0f1;
         }
-
         .search-bar button {
             background-color: #2980b9;
             color: #ecf0f1;
@@ -91,12 +78,9 @@
             padding: 10px 20px;
             transition: background-color 0.3s ease;
         }
-
         .search-bar button:hover {
             background-color: #2c3e50;
         }
-        
-        /* Index Section Styles */
         section.container {
             background: linear-gradient(to right, #2c3e50, #34495e);
             border-radius: 15px;
@@ -107,7 +91,6 @@
             overflow: hidden;
             margin: 2% 5%;
         }
-
         section.container h2 {
             color: #ecf0f1;
             border-bottom: 2px solid #3498db;
@@ -126,30 +109,26 @@
             overflow: hidden;
         }
         .preview-image {
-            width: 100%; /* Make the image fill the container */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Remove extra space beneath inline elements */
+            width: 100%;
+            height: auto; 
+            display: block; 
         }
-
         .links {
             list-style: none;
             padding: 0;
         }
-
         .links li {
             margin-bottom: 10px;
         }
-
         .links a {
             color: #ecf0f1;
             text-decoration: none;
             font-size: 1.2rem;
             display: block;
             transition: color 0.3s ease;
-            font-size: 1.4rem; /* Adjust font size for better readability */
+            font-size: 1.4rem;
             font-weight: bold;
         }
-
         .links a:hover {
             color: #3498db;
         }
@@ -157,12 +136,10 @@
             max-width: 80%;
             margin: 1.75rem auto;
         }
-
         .modal-content {
             background-color: transparent;
             border: none;
         }
-
         .modal-body img {
             width: 100%;
             height: auto;
@@ -174,14 +151,11 @@
             justify-content: space-around;
             padding: 0;
         }
-
         .project-item {
             margin: 10px;
             text-align: center;
-            width: calc((100% - 40px) / 3); /* Adjusted width for responsiveness based on the border size */
+            width: calc((100% - 40px) / 3);
         }
-
-        /* Preview Image Styles */
         .preview-image {
             width: 100%;
             height: auto;
@@ -189,21 +163,34 @@
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
-
         .preview-image:hover {
             transform: scale(1.1);
         }
         @media (max-width: 768px) {
             .project-item {
-                width: calc((100% - 20px) / 2); /* Adjusted width for smaller screens */
+                width: calc((100% - 20px) / 2);
             }
         }
-
+        .links {
+            flex-wrap: wrap;
+        }
+        .project-item {
+            width: calc((100% - 40px) / 3);
+        }
+        @media (max-width: 768px) {
+            .project-item {
+                width: calc((100% - 20px) / 2);
+            }
+        }
+        @media (max-width: 576px) {
+            .project-item {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -234,8 +221,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Index Section -->
     <section class="container my-5">
         <h2 class="text-center mb-4">Website Projects:</h2>
         <ul class="links list-unstyled d-flex justify-content-around">
@@ -270,8 +255,7 @@
                 </a>
             </li>
         </ul>
-
-        <h2>Programs Developed:</h2>
+        <h2 class="text-center mb-4">Programs Developed:</h2>
         <ul class="links">
             <li><a href="#">ODD_GROUP_7.cpp</a></li>
             <li><a href="#">POSITIVE_NEGATIVE_GROUP_7.cpp</a></li>
@@ -279,7 +263,7 @@
             <li><a href="#">Numbers-Roman Numerals.cpp</a></li>
             <li><a href="#">Resibo.cpp</a></li>
         </ul>
-        <h2>Presentations:</h2>
+        <h2 class="text-center mb-4">Presentations:</h2>
         <ul class="links list-unstyled d-flex justify-content-around">
             <li class="project-item">
                 <a href="Thinkerbells_PracticalResearch_OOSTING-THE-BOOSTERS_-Covariance-between-COVID-19-Booster-Vaccine-Willingness-and-Perception-of-STEM-strand-Senior-High-School-Students-in-Dasmarinas-Integrated-High-School_Prese-1.pptx" target="_blank">
@@ -423,9 +407,6 @@
                 </a>
             </li>
         </ul>
-
-        <!-- Modals for each image -->
-        <!-- Modal for Yae Miko -->
         <div class="modal fade" id="yaeMikoModal" tabindex="-1" aria-labelledby="yaeMikoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -435,8 +416,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Tree -->
         <div class="modal fade" id="treeModal" tabindex="-1" aria-labelledby="treeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -446,8 +425,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Todoroki -->
         <div class="modal fade" id="todorokiModal" tabindex="-1" aria-labelledby="todorokiModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -457,8 +434,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Tanya -->
         <div class="modal fade" id="tanyaModal" tabindex="-1" aria-labelledby="tanyaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -468,8 +443,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Slayer -->
         <div class="modal fade" id="slayerModal" tabindex="-1" aria-labelledby="slayerModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -479,8 +452,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Posses -->
         <div class="modal fade" id="possesModal" tabindex="-1" aria-labelledby="possesModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -490,8 +461,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for No Face -->
         <div class="modal fade" id="noFaceModal" tabindex="-1" aria-labelledby="noFaceModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -501,8 +470,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Hand -->
         <div class="modal fade" id="handModal" tabindex="-1" aria-labelledby="handModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -512,8 +479,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Arthur -->
         <div class="modal fade" id="arthurModal" tabindex="-1" aria-labelledby="arthurModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -523,8 +488,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Haunt -->
         <div class="modal fade" id="hauntModal" tabindex="-1" aria-labelledby="hauntModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -534,8 +497,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal for Guts -->
         <div class="modal fade" id="gutsModal" tabindex="-1" aria-labelledby="gutsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -548,5 +509,4 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
 </html>
